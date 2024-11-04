@@ -48,15 +48,4 @@ public class GlobalControllerAdvice {
       FertilizerNotFoundException exception) {
     return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMessage());
   }
-
-  /**
-   * Handle exception response entity.
-   *
-   * @param exception the exception
-   * @return the response entity
-   */
-  @ExceptionHandler
-  public ResponseEntity<String> handleException(Exception exception) {
-    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(exception.getMessage());
-  }
 }
