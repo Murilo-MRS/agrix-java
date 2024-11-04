@@ -54,7 +54,6 @@ public class SecurityConfig {
             authorize -> authorize
                 .requestMatchers(HttpMethod.POST, "/persons").permitAll()
                 .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
-                //.requestMatchers(toH2Console()).permitAll()
                 .anyRequest().authenticated()
         )
         .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)

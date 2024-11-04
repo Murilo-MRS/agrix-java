@@ -2,7 +2,6 @@ package com.betrybe.agrix.ebytr.staff.controllers;
 
 import com.betrybe.agrix.ebytr.staff.controllers.dto.PersonCreationDto;
 import com.betrybe.agrix.ebytr.staff.controllers.dto.PersonDto;
-import com.betrybe.agrix.ebytr.staff.models.entities.Person;
 import com.betrybe.agrix.ebytr.staff.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
