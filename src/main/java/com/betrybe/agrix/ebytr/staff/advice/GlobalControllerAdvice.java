@@ -72,5 +72,4 @@ public class GlobalControllerAdvice {
   public ResponseEntity<String> handleAccessDeniedException(AccessDeniedException exception) {
     return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Access denied");
   }
-
 }
